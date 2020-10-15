@@ -1,0 +1,1316 @@
+{
+  "intents": [
+    {
+      "intent": "Book",
+      "examples": [
+        {
+          "text": "Can you please book tickets"
+        },
+        {
+          "text": "I want to book tickets"
+        },
+        {
+          "text": "I want to book tickets for movie"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good day"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hello I am looking for some help here"
+        },
+        {
+          "text": "Hey there"
+        },
+        {
+          "text": "Hey there Hi How are you"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Hi MuVi"
+        },
+        {
+          "text": "How are you"
+        },
+        {
+          "text": "Namaste"
+        },
+        {
+          "text": "Salam"
+        },
+        {
+          "text": "What's up?"
+        },
+        {
+          "text": "Yo"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "list_of_movies_available",
+      "examples": [
+        {
+          "text": "Can you provide list of latest release movie"
+        },
+        {
+          "text": "can you provide list of movies screening right now"
+        },
+        {
+          "text": "Can you provide list of movies show available"
+        },
+        {
+          "text": "Can you provide the list of cinema halls and shows"
+        },
+        {
+          "text": "Can you provide the list of latest released movies"
+        },
+        {
+          "text": "Can you suggest me latest movies release"
+        },
+        {
+          "text": "Hi Suggest me some good movies"
+        },
+        {
+          "text": "What are the list of movies released"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "show_timing",
+      "examples": [
+        {
+          "text": "can you help me to decide timing of movie show"
+        },
+        {
+          "text": "Can you provide movies list with timing"
+        },
+        {
+          "text": "Can you provide timing of each show"
+        },
+        {
+          "text": "Please help me to provide list of movies show timing"
+        },
+        {
+          "text": "timing of movie show"
+        },
+        {
+          "text": "What are the timing of shows"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "book",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "book",
+          "synonyms": [
+            "asking",
+            "attempt",
+            "attempted",
+            "attempting",
+            "attempts",
+            "book ticket",
+            "buy",
+            "chose",
+            "hoped",
+            "intends",
+            "order ",
+            "ordered",
+            "ordering",
+            "orders",
+            "proceeded",
+            "purchase",
+            "request",
+            "requested",
+            "requesting",
+            "requests",
+            "wanted",
+            "wants",
+            "wished"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "Afternoon",
+            "GA",
+            "Gud noon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good day",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "Evening",
+            "GE",
+            "good eve",
+            "Gud Eve"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "GM",
+            "gud Mrng",
+            "Morning"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Namaste",
+          "synonyms": [
+            "bot",
+            "greeting ",
+            "hello bot",
+            "my bot",
+            "Pranaam"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Salaam",
+          "synonyms": [
+            "asluk"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "movies_show_available",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Movie",
+          "synonyms": [
+            "biopic",
+            "blockbuster",
+            "film",
+            "latest movies",
+            "latest screening movies",
+            "movies",
+            "movies released last weekend",
+            "on going shows",
+            "recent release movie ",
+            "video"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Cards",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Internet banking",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "seats_availabilties",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "C-10",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "C-5",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E-2",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "E-8",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "L-1",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "L-10",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "L-4",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "L-7",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "N-4",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "N-9",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "show",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "10:00 AM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1:00 PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "10:15 PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "2:25 PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "4:00 PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "4:25 PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "5:15 PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7:00 PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8:30 PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9:30 AM",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "show_timing",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "timing",
+          "synonyms": [
+            "film schedules",
+            "films schedule",
+            "films time table",
+            "films timing",
+            "film timing",
+            "movie schedules",
+            "movies schedule",
+            "movies show timing ",
+            "movies timing",
+            "movie timing",
+            "ongoing shows timing",
+            "schedule",
+            "scheduling",
+            "shows timing",
+            "show timing",
+            "timed",
+            "timetable",
+            "timetables",
+            "timings"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Tickets",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "C U SOON",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ELONA HOLMES",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LAXMI BOMB",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "NISHABDHAM",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "timing_of_selected_movie",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "C U",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ELONA",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LAXMI",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "NISHA",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_7_1602610950750",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1602610950750",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1602611214041",
+      "previous_sibling": "node_10_1602783121518"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1602612117568",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_1_1602612117570"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Can you provide name of movie, ticket/s of which  u want to book"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1602611214973",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1602611214988",
+      "previous_sibling": "handler_6_1602611214988"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1602612111608",
+      "context": {
+        "show": "@show"
+      },
+      "conditions": "@show",
+      "event_name": "input",
+      "dialog_node": "handler_4_1602612111611"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "On shich show you want to book tickets"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1602612111608",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1602612111611",
+      "previous_sibling": "handler_4_1602612111611"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1602611214973",
+      "context": {
+        "tickets": "@Tickets"
+      },
+      "conditions": "@Tickets",
+      "event_name": "input",
+      "dialog_node": "handler_6_1602611214988"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "We accept UPI, Cards & Internet banking mode for payments. How you are going to pay."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1602612207817",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1602612207819",
+      "previous_sibling": "handler_9_1602612207819"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "How many do you want"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1602612117568",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1602612117570",
+      "previous_sibling": "handler_1_1602612117570"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1602612207817",
+      "context": {
+        "payment": "@Payment"
+      },
+      "conditions": "@Payment",
+      "event_name": "input",
+      "dialog_node": "handler_9_1602612207819"
+    },
+    {
+      "type": "standard",
+      "title": "Greeting",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @Greetings",
+      "dialog_node": "node_10_1602489906914",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Delete context",
+      "parent": "node_7_1602610950750",
+      "conditions": "true",
+      "dialog_node": "node_10_1602783121518"
+    },
+    {
+      "type": "standard",
+      "title": "Shows timing and seat availability",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#show_timing || @show_timing",
+      "dialog_node": "node_1_1602779623316",
+      "previous_sibling": "node_9_1602515434218"
+    },
+    {
+      "type": "standard",
+      "title": "timing for selected movie",
+      "output": {},
+      "parent": "node_1_1602779623316",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@timing_of_selected_movie",
+      "dialog_node": "node_2_1602779623323"
+    },
+    {
+      "type": "standard",
+      "title": "Seat availabilities",
+      "output": {},
+      "parent": "node_2_1602779623323",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@seats_availabilties",
+      "dialog_node": "node_3_1602779623323"
+    },
+    {
+      "type": "frame",
+      "title": "Book",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank You, Your $number  ticket/s  for seat $seat  of $show for  $tickets is placed.  Please pay using $Payment"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#Book || @book:book",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_7_1602610950750",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1602779623316",
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "standard",
+      "title": "movies available",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#list_of_movies_available || @movies_show_available",
+      "digress_in": "returns",
+      "dialog_node": "node_9_1602515434218",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_10_1602489906914"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, Good morning"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602489906914",
+      "conditions": "now().after('04:00:00') && now().before('11:59:59')",
+      "dialog_node": "response_10_1602519131356"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. Good afternoon"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602489906914",
+      "conditions": "now().after('12:00:00') && now().before('16:59:59')",
+      "dialog_node": "response_10_1602519425023",
+      "previous_sibling": "response_10_1602519131356"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Available seats- \nSuper Deluxe:- A2, A3\nUpper Deluxe:- B1, B4\nLower Deluxe:-  C1, C2, C3, C4\n\nPrice- \nSuper Deluxe:- Rs. 550.00 per seat\nUpper Deluxe:- Rs. 500.00 per seat\nLower Deluxe:- Rs. 400.00 per seat"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602779623323",
+      "conditions": "@seats_availabilties:L-10",
+      "dialog_node": "response_10_1602779623323",
+      "previous_sibling": "response_9_1602779623323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Available seats- \nSuper Deluxe:-Full\nUpper Deluxe:- Full\nLower Deluxe:-  C1, C4\n\nPrice- \nSuper Deluxe:- Rs. 750.00 per seat\nUpper Deluxe:- Rs. 700.00 per seat\nLower Deluxe:- Rs. 600.00 per seat"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602779623323",
+      "conditions": "@seats_availabilties:L-1",
+      "dialog_node": "response_11_1602779623323",
+      "previous_sibling": "response_10_1602779623323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Available seats- \nSuper Deluxe:- A2, A3\nUpper Deluxe:- B1, B4\nLower Deluxe:-  C1,\n\nPrice- \nSuper Deluxe:- Rs. 750.00 per seat\nUpper Deluxe:- Rs. 700.00 per seat\nLower Deluxe:- Rs. 600.00 per seat"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602779623323",
+      "conditions": "@seats_availabilties:L-4",
+      "dialog_node": "response_12_1602779623323",
+      "previous_sibling": "response_11_1602779623323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Available seats- \nSuper Deluxe:- A2, A3\nUpper Deluxe:- B1, B4\nLower Deluxe:-  C1,\n\nPrice- \nSuper Deluxe:- Rs. 750.00 per seat\nUpper Deluxe:- Rs. 700.00 per seat\nLower Deluxe:- Rs. 600.00 per seat"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602779623323",
+      "conditions": "@seats_availabilties:L-7",
+      "dialog_node": "response_13_1602779623323",
+      "previous_sibling": "response_12_1602779623323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "NISHABHAM  (Daily shows)",
+            "options": [
+              {
+                "label": "9:30 AM",
+                "value": {
+                  "input": {
+                    "text": "N-9"
+                  }
+                }
+              },
+              {
+                "label": "4:25 PM",
+                "value": {
+                  "input": {
+                    "text": "N-4"
+                  }
+                }
+              }
+            ],
+            "description": "Select show to check availability of seats",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602779623323",
+      "conditions": "@timing_of_selected_movie:NISHA",
+      "dialog_node": "response_14_1602779623323",
+      "previous_sibling": "node_3_1602779623323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "LAXMI BOMB (Daily shows)",
+            "options": [
+              {
+                "label": "10:00 AM",
+                "value": {
+                  "input": {
+                    "text": "L-10"
+                  }
+                }
+              },
+              {
+                "label": "1:00 PM",
+                "value": {
+                  "input": {
+                    "text": "L-1"
+                  }
+                }
+              },
+              {
+                "label": "4:00 PM",
+                "value": {
+                  "input": {
+                    "text": "L-4"
+                  }
+                }
+              },
+              {
+                "label": "7:00 PM",
+                "value": {
+                  "input": {
+                    "text": "L-7"
+                  }
+                }
+              }
+            ],
+            "description": "Select particular show to check seats availabilities and price",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602779623323",
+      "conditions": "@timing_of_selected_movie:LAXMI",
+      "dialog_node": "response_15_1602779623323",
+      "previous_sibling": "response_14_1602779623323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "ELONA HOLMES  (Daily shows)       ",
+            "options": [
+              {
+                "label": "2:25 PM",
+                "value": {
+                  "input": {
+                    "text": "E-2"
+                  }
+                }
+              },
+              {
+                "label": "8:30 PM",
+                "value": {
+                  "input": {
+                    "text": "E-8"
+                  }
+                }
+              }
+            ],
+            "description": "Select particular show to check seats availabilities and price",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602779623323",
+      "conditions": "@timing_of_selected_movie:ELONA",
+      "dialog_node": "response_16_1602779623323",
+      "previous_sibling": "response_15_1602779623323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "C U SOON  (Daily shows)",
+            "options": [
+              {
+                "label": "5:15 PM",
+                "value": {
+                  "input": {
+                    "text": "C-5"
+                  }
+                }
+              },
+              {
+                "label": "10:15 PM",
+                "value": {
+                  "input": {
+                    "text": "C-10"
+                  }
+                }
+              }
+            ],
+            "description": "Select particular show to check seats availabilities and price",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602779623323",
+      "conditions": "@timing_of_selected_movie:(C U)",
+      "dialog_node": "response_17_1602779623323",
+      "previous_sibling": "response_16_1602779623323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Movies ",
+            "options": [
+              {
+                "label": "ELONA HOMLES     ",
+                "value": {
+                  "input": {
+                    "text": "ELONA"
+                  }
+                }
+              },
+              {
+                "label": "LAXMI BOMB    ",
+                "value": {
+                  "input": {
+                    "text": "LAXMI"
+                  }
+                }
+              },
+              {
+                "label": "C U SOON",
+                "value": {
+                  "input": {
+                    "text": "C U"
+                  }
+                }
+              },
+              {
+                "label": "NISHABDHAM  ",
+                "value": {
+                  "input": {
+                    "text": "NISHA"
+                  }
+                }
+              }
+            ],
+            "description": "Select particular for timing",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1602779623316",
+      "conditions": "@show_timing:timing",
+      "dialog_node": "response_18_1602779623323",
+      "previous_sibling": "node_2_1602779623323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "C U SOON                              \n                                                               \nGenre-Drama,     \nRating :- ImdB - 7.8                                                                                 Rotten Tomato-  5.6\nReleased last week   "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "LAXMI BOMB          \n                                                                         \nGenre- Comedy                   \nRating :- ImdB -7.2                                                                  Rotten Tomato-  6.6\nReleased last week   "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "ELONA HOMLES                                                                                    \n\nGenre- Fictional & Adventure           \nRating :- ImdB -7.9                                                    Rotten Tomato-  7.6\nReleased 2-week ago  \n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "NISHABDHAM                                                                                    \n\nGenre-Drama,       \nRating :- ImdB -7.8                                                                               Rotten Tomato-  5.6\nReleased last week   "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1602515434218",
+      "conditions": "@movies_show_available:Movie",
+      "dialog_node": "response_2_1602515612401"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. Good evening"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602489906914",
+      "conditions": "now().after('17:00:00')",
+      "dialog_node": "response_2_1602519441724",
+      "previous_sibling": "response_10_1602519425023"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Available seats- \nSuper Deluxe:- A2, A3\nUpper Deluxe:- B1, B4\nLower Deluxe:-  C1, C2\n\nPrice- \nSuper Deluxe:- Rs. 750.00 per seat\nUpper Deluxe:- Rs. 700.00 per seat\nLower Deluxe:- Rs. 600.00 per seat"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602779623323",
+      "conditions": "@seats_availabilties:E-2",
+      "dialog_node": "response_4_1602779623323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, May I Help You"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1602489906914",
+      "conditions": "anything_else",
+      "dialog_node": "response_5_1602519221732",
+      "previous_sibling": "response_2_1602519441724"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Available seats- \nSuper Deluxe:- A2, A3\nUpper Deluxe:- B1, B4\nLower Deluxe:-  C1,\n\nPrice- \nSuper Deluxe:- Rs. 750.00 per seat\nUpper Deluxe:- Rs. 700.00 per seat\nLower Deluxe:- Rs. 600.00 per seat"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602779623323",
+      "conditions": "@seats_availabilties:E-8",
+      "dialog_node": "response_5_1602779623323",
+      "previous_sibling": "response_4_1602779623323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Available seats- \nSuper Deluxe:- Full\nUpper Deluxe:- B1, B4\nLower Deluxe:-  C1, C2, C3\n\nPrice- \nSuper Deluxe:- Rs. 750.00 per seat\nUpper Deluxe:- Rs. 700.00 per seat\nLower Deluxe:- Rs. 600.00 per seat"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602779623323",
+      "conditions": "@seats_availabilties:C-5",
+      "dialog_node": "response_6_1602779623323",
+      "previous_sibling": "response_5_1602779623323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Available seats- \nSuper Deluxe:- Full\nUpper Deluxe:- Full\nLower Deluxe:-  C1, C2\n\nPrice- \nSuper Deluxe:- Rs. 550.00 per seat\nUpper Deluxe:- Rs. 500.00 per seat\nLower Deluxe:- Rs. 400.00 per seat"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602779623323",
+      "conditions": "@seats_availabilties:C-10",
+      "dialog_node": "response_7_1602779623323",
+      "previous_sibling": "response_6_1602779623323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Available seats- \nSuper Deluxe:- A2, A3\nUpper Deluxe:- B1, B4\nLower Deluxe:-  C2,C3\n\nPrice- \nSuper Deluxe:- Rs. 750.00 per seat\nUpper Deluxe:- Rs. 700.00 per seat\nLower Deluxe:- Rs. 600.00 per seat"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602779623323",
+      "conditions": "@seats_availabilties:N-4",
+      "dialog_node": "response_8_1602779623323",
+      "previous_sibling": "response_7_1602779623323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Available seats- \nSuper Deluxe:- A2, A3\nUpper Deluxe:- B1, B2\nLower Deluxe:-  Full\n\nPrice- \nSuper Deluxe:- Rs. 750.00 per seat\nUpper Deluxe:- Rs. 700.00 per seat\nLower Deluxe:- Rs. 600.00 per seat"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602779623323",
+      "conditions": "@seats_availabilties:N-9",
+      "dialog_node": "response_9_1602779623323",
+      "previous_sibling": "response_8_1602779623323"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1602610950750",
+      "variable": "$payment",
+      "dialog_node": "slot_1_1602612207817",
+      "previous_sibling": "slot_4_1602612117568"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1602610950750",
+      "variable": "$tickets",
+      "dialog_node": "slot_3_1602611214973",
+      "previous_sibling": "handler_1_1602611214041"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1602610950750",
+      "variable": "$number",
+      "dialog_node": "slot_4_1602612117568",
+      "previous_sibling": "slot_8_1602612111608"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1602610950750",
+      "variable": "$show",
+      "dialog_node": "slot_8_1602612111608",
+      "previous_sibling": "slot_3_1602611214973"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I am Muvi - The Bot, capable of offers showtimes, movies tickets, reviews, concert ticket, events. Also features promotional offers and discounts.  How may I help you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Movie Bot",
+  "language": "en",
+  "description": ""
+}
